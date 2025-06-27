@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detailed Profile</title>
+  <style>
+    body {
+      background-color: #e8f0fe;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .profile-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 30px;
+      text-align: center;
+      max-width: 350px;
+      width: 100%;
+    }
+    .profile-image {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0078d7;
+      margin-bottom: 20px;
+    }
+    .profile-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0078d7;
+      margin-bottom: 8px;
+    }
+    .profile-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 15px;
+    }
+    .profile-bio {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .profile-info {
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .profile-info strong {
+      display: inline-block;
+      width: 100px;
+      color: #0078d7;
+    }
+    .achievements {
+      background-color: #f0f7ff;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 14px;
+      color: #0078d7;
+    }
+    .achievements h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .achievements ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img src="data:image/jpeg;base64,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" alt="Profile Picture" class="profile-image" />
+    <div class="profile-name">John Pradeep</div>
+    <div class="profile-title">Software Developer</div>
+    <div class="profile-bio">
+      Passionate about building web applications and solving complex problems with clean code.
+    </div>
+    <div class="profile-info">
+      <div><strong>Email:</strong> john.doe@example.com</div>
+      <div><strong>Location:</strong> San Francisco, CA</div>
+      <div><strong>Phone:</strong> +1 123 456 7890</div>
+    </div>
+    <div class="achievements">
+      <h3>Achievements</h3>
+      <ul>
+        <li>Developed a popular open-source library with 10k+ stars on GitHub</li>
+        <li>Speaker at 3 international tech conferences</li>
+        <li>Lead developer in a successful startup project</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
